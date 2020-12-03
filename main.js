@@ -13,7 +13,7 @@ const mockUpStrand = () => {
   return newStrand;
 };
 
-
+// Create a factory function for organism objects
 const pAequorFactor = (uNum, dnaArray) => {
   return {
     specimenNum: uNum,
@@ -26,7 +26,7 @@ const pAequorFactor = (uNum, dnaArray) => {
       while (this.dna[randIndex] === newBase){
         newBase = returnRandBase();
       }
-      //put the new mutated base back into the array
+      // put the new mutated base back into the array
       this.dna[randIndex] = newBase;
     },
     // Compare two organisms
@@ -64,28 +64,3 @@ while(jellyArray.length < 30) {
     jellyArray.push(organism);
   };
 };
-
-
-
-console.log(jellyArray);
-
-/*let jelly1 = pAequorFactor(1, mockUpStrand());
-console.log(jelly1.willLikelySurvive());
-*/
-
-
-
-
-
-
-/*
-**testing testing**
-//let jelly1 = pAequorFactor(1, mockUpStrand());
-//let jelly2 = pAequorFactor(4, mockUpStrand());
-
-//console.log(jelly1.specimenNum + ": " + jelly1.dna);
-//console.log(jelly2.specimenNum + ": " + jelly2.dna);
-//jelly1.compareDNA(jelly2);
-**testing testing** 
-*/
-
